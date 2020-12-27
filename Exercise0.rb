@@ -39,3 +39,35 @@ siblings = {
     "Mike" => 29,
     "Ariel" => 20
 }
+
+# Exercise 1 
+# Accessing Values from Arrays and Hashes
+# For all of the arrays above, print out:
+# the first element
+# the last element
+# the first two elements
+# the last two elements
+
+def arrays_1(array)
+    puts "Your array is:"
+    puts array.first
+    puts array.last
+    puts array.first(2)
+    puts array.last(2)
+end
+
+arrays_1(fav_colours)
+arrays_1(siblings_age)
+arrays_1(coin_flip_heads)
+arrays_1(favorite_artists)
+arrays_1(fav_colours_symbols)
+
+
+# For all of the hashes above, print out:
+# one of the stored values
+
+puts dictionary["Apple"]
+puts fav_movies["Hot Fuzz"]
+puts largest_cities["Tokyo"]
+puts siblings["Shira"]
+
