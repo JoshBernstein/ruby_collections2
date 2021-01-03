@@ -52,3 +52,15 @@ p eastbound
 #Move this repeated code into a method that accepts a direction and a list of trains as arguments, 
 #and returns a list of just the trains that go in that direction. Call this method once for north and once for east in order to DRY up your code.
 
+def route_dir(direction, train_list)
+    trains = []
+    train_list.each do |route|
+        if route[:direction] == direction
+            trains.push(route[:train])
+        end
+    end
+    p trains
+end
+
+route_dir("north", train_schedule)
+route_dir("east", train_schedule)
