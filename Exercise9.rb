@@ -60,6 +60,7 @@ def route_dir(direction, train_list)
         end
     end
     p trains
+    return trains
 end
 
 route_dir("north", train_schedule)
